@@ -1,7 +1,5 @@
 package com.listing.listingAPI;
 
-import org.json.*;
-import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -22,7 +20,7 @@ public class ListingApiApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(ListingApiApplication.class);
 
-	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
 
 	public static void main(String[] args) {
 		SpringApplication.run(ListingApiApplication.class, args);
